@@ -39,3 +39,9 @@ The -- here presents that we keep working in the current branch. The file comman
 If we want to revert the state of older commit, we will use git revert. This will create a new commit with the state of the commit with the provided SHA
 
     git revert 06327fb
+
+#### Return to a previous commit in a Git repository and discard all changes made after that commit,
+
+git log --oneline
+git reset --hard <commit-hash>
+git push origin HEAD --force
